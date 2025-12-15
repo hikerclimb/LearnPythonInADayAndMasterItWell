@@ -1,8 +1,5 @@
 def main():
     lst = ['John', 'Peter', 'Sam', 'Tim', 'Janet', 'Dan']
-    lst.remove('John')
-    lst.remove('Sam')
-    lst.remove('Janet')
-    lst.remove('Dan')
+    lst = [x for (i,x) in enumerate (lst) if i not in (0,4,5)]
     print(lst)
 main()
